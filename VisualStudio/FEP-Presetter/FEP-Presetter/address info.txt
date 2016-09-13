@@ -1,0 +1,31 @@
+Address info
+
+self address			0	00-0F
+Group address			1	F0-FE
+counterpart address		2	00-0F
+Transmit mode			3	F0
+Scramble 1				4	00-FF
+Scramble 2				5	00-FF
+Frequency group			6	01H
+CH1						7	18-3C
+CH2						8	18-3C
+CH3						9	18-3C
+Antenna (00=2, 01=1)	10	00-01
+Retransmit count		11	00H
+Roaming threshold		12	50H
+Packet Response			13	81H
+UNUSED					14	00H
+Command interval		15	01H
+band switching			16	00H
+buffer clear time		17	64H
+address check			18	8DH
+Beacon processing		19	00H
+bps, parity bits etc	20	03H
+low power mode setting	21	09H
+Low pwr standby time	22	0FH
+CrLf setting			23	10H
+Tx mode delimiter		24	C1H
+Low pwr sleep time		25	0FH
+Data in timeout			26	01H
+repeater address 1		27	FFH
+repeater address 2		28	FFH

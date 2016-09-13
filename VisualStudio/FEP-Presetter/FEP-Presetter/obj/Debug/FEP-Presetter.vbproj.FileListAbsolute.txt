@@ -1,0 +1,16 @@
+C:\Users\Emery\Documents\Visual Studio 2013\Projects\FEP-Presetter\FEP-Presetter\bin\Debug\FEP-Presetter.exe.config
+C:\Users\Emery\Documents\Visual Studio 2013\Projects\FEP-Presetter\FEP-Presetter\bin\Debug\FEP920Modules.mdf
+C:\Users\Emery\Documents\Visual Studio 2013\Projects\FEP-Presetter\FEP-Presetter\bin\Debug\FEP920Modules_log.ldf
+C:\Users\Emery\Documents\Visual Studio 2013\Projects\FEP-Presetter\FEP-Presetter\bin\Debug\FEP-Presetter.exe
+C:\Users\Emery\Documents\Visual Studio 2013\Projects\FEP-Presetter\FEP-Presetter\bin\Debug\FEP-Presetter.pdb
+C:\Users\Emery\Documents\Visual Studio 2013\Projects\FEP-Presetter\FEP-Presetter\bin\Debug\FEP-Presetter.xml
+C:\Users\Emery\Documents\Visual Studio 2013\Projects\FEP-Presetter\FEP-Presetter\obj\Debug\FEP_Presetter.frmMain.resources
+C:\Users\Emery\Documents\Visual Studio 2013\Projects\FEP-Presetter\FEP-Presetter\obj\Debug\FEP_Presetter.Resources.resources
+C:\Users\Emery\Documents\Visual Studio 2013\Projects\FEP-Presetter\FEP-Presetter\obj\Debug\FEP-Presetter.vbproj.GenerateResource.Cache
+C:\Users\Emery\Documents\Visual Studio 2013\Projects\FEP-Presetter\FEP-Presetter\obj\Debug\FEP-Presetter.exe
+C:\Users\Emery\Documents\Visual Studio 2013\Projects\FEP-Presetter\FEP-Presetter\obj\Debug\FEP-Presetter.xml
+C:\Users\Emery\Documents\Visual Studio 2013\Projects\FEP-Presetter\FEP-Presetter\obj\Debug\FEP-Presetter.pdb
+C:\Users\Emery\Documents\Visual Studio 2013\Projects\FEP-Presetter\FEP-Presetter\bin\Debug\FEP-Presetter.exe.manifest
+C:\Users\Emery\Documents\Visual Studio 2013\Projects\FEP-Presetter\FEP-Presetter\bin\Debug\FEP-Presetter.application
+C:\Users\Emery\Documents\Visual Studio 2013\Projects\FEP-Presetter\FEP-Presetter\obj\Debug\FEP-Presetter.exe.manifest
+C:\Users\Emery\Documents\Visual Studio 2013\Projects\FEP-Presetter\FEP-Presetter\obj\Debug\FEP-Presetter.application
