@@ -37,10 +37,11 @@
  */
 
 #define DEBUG 0      // Debug switch. 0 = off, 1 = on
-#define SENSORS 1    // Number of analog sensors, from A0 to A11 (1-12 sensors)
-#define SAMPLES 2     // Number of samples per pin to average
-#define ISD 1        // Inter-Sample delay: delay between each sample. Generally set to 0
+#define SENSORS 3    // Number of analog sensors, from A0 to A11 (1-12 sensors)
+#define SAMPLES 1     // Number of samples per pin to average
+#define ISD 0        // Inter-Sample delay: delay between each sample. Generally set to 0
 #define RSD 5        // Reporting Sample delay: between each cycle. Generally set to 0
+#define SERIAL_SPEED 57600
 
 
 int i, x , t, a;                      // For loop counters
@@ -49,7 +50,7 @@ int SensorAverage[SENSORS];         // Array for holding averaged sensor value f
 
 
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(SERIAL_SPEED);
 }
 
 void loop() {
@@ -61,9 +62,9 @@ void loop() {
 
 void SensorsRead(){
   for (i=0; i < SAMPLES; i++) {
-    for (x=0; x < SENSORS; x++){
+    for (x=0; x < SENSORS; x++) {
       SensorValues[x][i] = analogRead(x);
-      if (DEBUG == 1){
+      if (DEBUG == 1) {
         Serial.print(x);
         Serial.print(":");
         Serial.print(i);
@@ -73,23 +74,24 @@ void SensorsRead(){
       }
       delay(ISD);
     }
-  if (DEBUG == 1){  
-    Serial.println();
+    if (DEBUG == 1) {
+      Serial.println();
+    }
   }
- }
 }
 
 void SensorsAverage(){
  //addition of the array rows and averageing
  for (a=0; a < SENSORS; a++) {
-    for (t=0; t < SAMPLES; t++){
-      SensorAverage[a] = SensorAverage[a]+SensorValues[a][t];
+    SensorAverage[a] = 0;
+    for (t=0; t < SAMPLES; t++) {
+      SensorAverage[a] = SensorAverage[a] + SensorValues[a][t];
     }
-    if (DEBUG == 1){              // print some text if debug is on
+    if (DEBUG == 1) {              // print some text if debug is on
       Serial.print("TotSens ");
-    Serial.print(a);
-    Serial.print(":");
-    Serial.print(SensorAverage[a]);
+      Serial.print(a);
+      Serial.print(":");
+      Serial.print(SensorAverage[a]);
     }
     
     SensorAverage[a] = SensorAverage[a]/SAMPLES;
@@ -98,13 +100,12 @@ void SensorsAverage(){
       Serial.println(SensorAverage[a]);
     } else {
       // Serial.print(a);
-     //   Serial.print(":");
+      // Serial.print(":");
       Serial.print(SensorAverage[a]);
-      if (a < SENSORS-1){
+      if (a < SENSORS - 1) {
         Serial.print(",");
       }
     }
-    SensorAverage[a] = 0;
   }
   Serial.println();
 }
