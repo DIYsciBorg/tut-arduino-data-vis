@@ -38,8 +38,22 @@ void setup()
   drawBaselines();
 
   // prep serial port
-  println(Serial.list());
-  port = new Serial(this,Serial.list()[0],115200);
+  int serial = 1;
+  int speed = 57600;
+  println("Serials: ");
+  for (int i = 0; i < Serial.list().length; i++) {
+    print("  ");
+    print(i);
+    print(" => ");
+    println(Serial.list()[i]);
+  }
+  print("Selecting Serial ");
+  print(serial);
+  print(" (");
+  print(Serial.list()[serial]);
+  print("), speed: ");
+  println(speed);
+  port = new Serial(this,Serial.list()[serial], speed);
   port.bufferUntil(linefeed);
   
   // logging
@@ -75,6 +89,7 @@ void draw()
   // all we need to do is decide if it is time to draw a pixel on the plot, and if so, call plotSensors()
   if(count >= count_limit)
   {
+    println("gonna draw");
     plotSensors();
     count = 0;
   }
