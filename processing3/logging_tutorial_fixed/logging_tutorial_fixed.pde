@@ -141,7 +141,7 @@ String formatLogEntry()
   Hour = nf(hour(),2);
   Minute = nf(minute(),2);
   Second = nf(second(),2);
-  String log_entry = Hour + ":" + Minute + ":" + Second + "," + sensors[0] + "," + sensors[1] + "," + sensors[2]+ sensors[3] + "," + sensors[4] + "," + sensors[5];
+  String log_entry = Hour + ":" + Minute + ":" + Second + "," + sensors[0] + "," + sensors[1] + "," + sensors[2];
   return log_entry;
 }
 
